@@ -1,0 +1,110 @@
+<html> 
+	<head>
+		<link type="text/css" rel="stylesheet" href="Main.css" />
+
+		<title class="border"> Soccer training </title>
+
+		<script type="text/javascript">
+
+		function banner(){ 
+			var text = confirm("Did You Really Want to Click on Bing?"); 
+				return text; 
+				}
+function answer(){ 
+var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = ""; 
+
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "1" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+} //end function answer 
+
+
+		</script>
+
+	</head> 
+
+<body id="background"> 
+	<a href="http://bing.com" onclick="return banner()"> Bing <header> </a>
+	
+		<font size="50px"> Hello </font>
+	</header>
+<center>
+	<nav>
+	<ul id="mavmenu">
+		<li class="navitem"> <a href="index.html"> Home </a> </li>
+		<li class="navitem"> <a href="Stats.htlm"> Stats </a> </li>
+		<li class="navitem"> <a href="vidoes.html"> Videos </a> </li>
+	</ul>
+	</nav>
+</center>
+<div id="rightside">
+
+ <div class="items">
+		<li class="listitem"> soccer is the best sport </li>
+		<li class="listitem"> a lot of people play soccer </li>
+		<li class="listitem"> the earthquakes are the best team in the mls </li>
+    </div>
+
+</div>
+
+<div id="leftside">
+
+	<div class="wrap-trivia"> 
+ 	<h1> 
+ 		<strong> Question about soccer </strong> 
+ 	</h1>
+ 	<p> how many  <span class="G"> goals </span> did I score last year? </p>
+
+<form>
+	<div id="response"> </div>
+	<input type="radio" name="trivia" value="1">
+	 1 <br />
+	<input type="radio" name="trivia" value="2"> 
+	2 <br />
+	<input type="radio" name="trivia" value="3"> 
+	3 <br />
+	<input type="radio" name="trivia" value="4"> 
+	4 <br />
+	<input type="button" value="Click Here" id="button" onclick="answer()"> 
+</form> <br /> </div>
+
+
+
+</div>
+
+
+<div id="clearfoat"> </div>
+
+
+	
+	<center> 
+		<h1> Soccer training guide </h1> 
+	</center>
+
+	<p> This website will help <u>further</u> your socccer skills. This <i> website will </i> go over some basic training
+	<strong> drills </strong> that will help you improve your soccer abilties.</p> <br /> 
+
+ <p class="test">
+  fffff 
+</p>
+   <div style="float:center;">
+    <img id="image" src="https://thumbs.dreamstime.com/z/soccer-ball-11002436.jpg" /> 
+	</div> <br />
+
+
+
+<footer> created by </footer>
+</body> 
+</html>
